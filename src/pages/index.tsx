@@ -14,7 +14,10 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+const rejected = Promise.reject("asdf");
 export default function Home() {
+  console.log("render home");
+  throw rejected;
   return (
     <>
       <Head>
