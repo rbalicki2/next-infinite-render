@@ -15,8 +15,15 @@ const geistMono = localFont({
 });
 
 const rejected = Promise.reject("asdf");
+
+const rejected2 = new Promise((resolve, reject) => {
+  setTimeout(reject, 2000);
+});
+
 export default function Home() {
   console.log("render home");
+  // it doesn't matter if we throw rejected or rejected2
+  // rejected2 more accurately reflects what would happen if a network request failed...
   throw rejected;
   return (
     <>
