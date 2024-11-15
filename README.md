@@ -39,3 +39,15 @@ render home
 render home
 # etc
 ```
+
+# Installation
+
+Next was originally set up with:
+
+```
+npx create-next-app@latest . \
+  --ts --eslint --no-app --src-dir \
+  --no-tailwind --import-alias "@/*"
+```
+
+also, corepack was disabled.
